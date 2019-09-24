@@ -1,0 +1,679 @@
+
+///////////////////////////////////////////////////////////////////////////////
+/// Base //////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+@import "_variables";
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: $white;
+}
+
+@media (min-width: 1200px) {
+	.container-fluid {
+		padding-right: 16rem;
+		padding-left: 16rem;
+	}
+}
+
+.row {
+	margin-right: -8px;
+	margin-left: -8px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+.img-fluid {
+	object-fit: contain;
+}
+
+a[target] {
+	text-decoration: none;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Elements ///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+.btn {
+	border-radius: 23px;
+	white-space: nowrap;
+	&:hover {
+		box-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+		transition: all 0.4s ease 0s;
+	}
+}
+
+.btn-start {
+	box-shadow: 0px 20px 30px 0 rgba(0, 0, 29, 0.14);
+	background-color: $white;
+	padding: 13px 18px;
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.21;
+	letter-spacing: normal;
+	text-align: center;
+	color: $btn-start-color;
+	&:hover {
+		color: $btn-start-color;
+	}
+}
+
+.btn-discover {
+	border-radius: 30px;
+	box-shadow: 0px 15px 50px 0 rgba(26, 38, 74, 0.15);
+	padding: 18px 53px;
+	background-color: $white;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	// line-height: 2.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: $btn-discover-color;
+	margin-right: 0.5rem;
+	&:hover {
+		color: $btn-discover-color;
+	}
+}
+
+.view-demo {
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: $white;
+	margin-left: 0.5rem;
+	&:hover, &:focus {
+		color: $white;
+	}
+}
+
+.btn-learn {
+	box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.16);
+	background-image: linear-gradient(to bottom, #7464fd, #5851ea 40%, #5851ea);
+	padding: 17px 51px;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.03;
+	letter-spacing: normal;
+	text-align: center;
+	color: $white;
+	margin-top: 4%;
+	&:hover {
+		color: $white;
+	}
+}
+
+.btn-see {
+	border-radius: 40px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	background-image: linear-gradient(to bottom, #7464fd, #5851ea 40%, #5851ea);
+	padding: 15px 44px;
+	font-family: Poppins;
+	font-size: 21px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	// line-height: 1.67;
+	letter-spacing: normal;
+	text-align: center;
+	color: $white;
+	&:hover {
+		color: $white;
+	}
+}
+
+h1 {
+	font-family: Poppins;
+	font-size: 50px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: center;
+	color: $white;
+	padding-bottom: 1rem;
+}
+
+h2 {
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	// line-height: 2.2;
+	letter-spacing: -0.8px;
+	text-align: center;
+	color: $hd2-color;
+	margin-bottom: 7%;
+}
+
+#features {
+	margin-bottom: 0;
+}
+
+h3 {
+	font-family: Poppins;
+	font-size: 36px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: $hd3-color;
+}
+
+h4 {
+	font-family: Roboto;
+	font-size: 35px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.71;
+	letter-spacing: normal;
+	text-align: center;
+	color: $white;
+	padding-bottom: 7%;
+}
+
+h5 {
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.19;
+	letter-spacing: normal;
+	text-align: center;
+	color: $hd5-color;
+	margin-bottom: 3%;
+}
+
+h6 {
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 3;
+	letter-spacing: normal;
+	text-align: left;
+	color: $white;
+}
+
+p {
+	font-family: OpenSans;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.78;
+	letter-spacing: normal;
+	color: $par-color;
+}
+
+.par-exclusive {
+	font-size: 16px;
+	line-height: 1.88;
+	text-align: center;
+}
+
+.par-apostrophe {
+	font-family: Arial;
+	font-size: 108.5px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.44;
+	letter-spacing: normal;
+	text-align: center;
+	color: $apostrophe-color;
+	white-space: nowrap;
+	margin-top: 5px;
+    margin-left: -23px;
+}
+
+.par-review {
+	font-family: OpenSans;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+	font-stretch: normal;
+	line-height: 1.78;
+	letter-spacing: normal;
+	text-align: center;
+}
+
+.par-profession {
+	font-family: OpenSans;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2;
+	letter-spacing: normal;
+	// text-align: center;
+	white-space: nowrap;
+}
+
+.par-footer {
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.86;
+	letter-spacing: normal;
+	text-align: left;
+	color: $white;
+	white-space: nowrap;
+}
+
+cite {
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.78;
+	letter-spacing: normal;
+	text-align: left;
+	color: $cite-color;
+	white-space: nowrap;
+}
+
+.form-control {
+	// max-width: 565px;
+	// width: 100%;
+	padding: 52px;
+	border-radius: 52px;
+	border: solid 1px $form-control-color;
+	font-family: Poppins;
+	font-size: 22px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: $form-control-color;
+	&::placeholder {
+        color: $form-control-color;
+	}
+	&:invalid {
+        box-shadow: none;
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Header /////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+.logo-text {
+	font-family: Poppins;
+	font-size: 28px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: left;
+	color: $white;
+	&:hover, &focus {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+.menu-items {
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: $white;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Footer /////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+.footer-links a {
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.14;
+	letter-spacing: normal;
+	text-align: left;
+	color: $white;
+	white-space: nowrap;
+}
+
+.par-copyright {
+	font-family: Poppins;
+	font-size: 17px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.53;
+	letter-spacing: normal;
+	text-align: left;
+	color: $white;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Backgrounds ////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+.nav-color {
+	background-image: linear-gradient(to top, #7464fd, #5851ea 40%, #5851ea);
+}
+
+.header-bg {
+	// border: solid 1px #707070;
+	// height: 100vh;
+	// background-image: url(../images/bg.png), linear-gradient(to top, #7464fd, #5851ea 40%, #5851ea);
+	background-image: url(../images/bg.png);
+	background-color: $users-review-color;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 100%;
+	// background-attachment: fixed;
+	// background-clip: border-box;
+	// background-origin: border-box;
+}
+
+.particles-js-canvas-el {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+.path-bg {
+	background-image: url(../images/path-bg.png);
+	background-color: $white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 25%
+}
+
+.in-app-bg {
+	background-color: $in-app-color;
+}
+
+.users-review-bg {
+	background-image: url(../images/review-bg.png);
+	// background-image: linear-gradient(to bottom, #7464fd, #5851ea 40%, #5851ea);
+	background-color: $users-review-color;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	padding-top: 9%;
+	padding-bottom: 9%;
+	// margin-top: -8%;
+}
+
+.card-bg {
+	max-width: 560px;
+	box-shadow: 0px 7px 17px 0 rgba(26, 38, 74, 0.1);
+	background-color: $white;
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
+	border-radius: 83px 0 0 0;
+	&:nth-child(2n) {
+		border-radius: 0 0 83px 0;
+	}
+	&:nth-child(3n) {
+		border-radius: 0 0 0 83px;
+	}
+	&:nth-child(4n) {
+		border-radius: 0 83px 0 0;
+	}
+}
+
+.apostrophe-bg {
+	background-color: $apostrophe-bg;
+	box-shadow: 0px 3px 7px 0 rgba(26, 38, 74, 0.15);
+	width: 0;
+	height: 0;
+	border: 35px solid $apostrophe-bg;
+	border-radius: 35px;
+	position: relative;
+}
+
+.newsletters-bg {
+	background-image: url(../images/newsletters-bg.png);
+	background-color: $white;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.lines {
+	width: 66px;
+	height: 2px;
+	background-image: linear-gradient(to top, #25dcf1, #1ebfe9 9%, #1595df 23%, #0d71d6 38%, #0756cf 53%, #0343ca 69%, #0037c7 84%, #0034c7);
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+.lines-center {
+	margin: 1% auto 2% auto;
+}
+
+.lines-long {
+	width: 103px;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+hr {
+	background-color: $hr-color;
+}
+
+.hr-logos {
+	background-color: $hr-logos;
+}
+
+footer {
+	// border: solid 1px rgba(0, 0, 0, 0);
+	// background-image: linear-gradient(to right, #4c84ff, #783dff);  
+	// opacity: 0.83;
+	background-image: url(../images/footer.png);
+	// background-image: url(../images/footer.png), linear-gradient(to top, #7464fd, #5851ea 40%, #5851ea);
+	// background-image: linear-gradient(to bottom, #7464fd, #5851ea 40%, #5851ea);
+	// background-image: linear-gradient(to top, #7464fd, #5851ea 40%, #5851ea);
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Slider /////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+.slick-dots {
+	bottom: -100px;
+}
+
+.slick-dots li button:before {
+	font-size: 10px;
+	color: $white;
+	opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+	color: $white;
+	opacity: 1;
+	font-size: 12px;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Spacing ////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+.nav-item {
+	margin-right: 2rem;
+}
+
+.heading-spacing {
+	padding-top: 15%;
+	padding-bottom: 30%;
+	position: relative;
+}
+
+.wrapper-spacing {
+	margin-top: 9%;
+	margin-bottom: 11%;
+}
+
+.augmented-reality-spacing {
+	margin-bottom: 10%;
+}
+
+.reality-spacing {
+	margin-top: 25%;
+	margin-bottom: 20%;
+}
+
+.education-research-spacing {
+	margin-bottom: 25%;
+}
+
+.research-spacing {
+	margin-top: 12%;
+}
+
+.innovation-spacing {
+	margin-top: 15%;
+}
+
+.in-app-spacing {
+	margin-top: 9%;
+	margin-bottom: 9%;
+}
+
+.in-app-img-spacing {
+	position: relative;
+	bottom: 5%;
+}
+
+blockquote {
+	padding: 2% 5%;
+}
+
+.trusted-spacing {
+	padding-top: 3%;
+}
+
+.newsletters-spacing {
+	padding-top: 9%;
+	padding-bottom: 12%;
+}
+
+.footer-spacing {
+	padding-top: 10%;
+	padding-bottom: 6%;
+}
+
+.logo-footer-spacing {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.footer-icons-spacing {
+	margin-right: 12%;
+}
+
+.copyright-spacing {
+	padding-top: 3%;
+	padding-bottom: 2%;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Media queries //////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 1699.98px) {
+	.research-spacing {
+		margin-top: 3%;
+	}
+	.innovation-spacing {
+		margin-top: 5%;
+	}
+	.in-app-img-spacing {
+		position: static;
+		margin-top: 35%;
+		margin-bottom: 35%;
+	}
+}
+
+@media (max-width: 1499.98px) {
+	.reality-spacing {
+		margin-top: 20%;
+	}
+}
+
+@media (max-width: 1399.98px) {
+	.form-control {
+		padding: 43px;
+		font-size: 16px; 
+	}
+}
+
+@media (max-width: 1299.98px) {
+	.reality-spacing {
+		margin-top: 10%;
+	}
+	.education-spacing {
+		margin-top: 12%;
+	}
+	.data-spacing {
+		margin-top: 20%;
+	}
+}
