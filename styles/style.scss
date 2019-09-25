@@ -200,7 +200,7 @@ h4 {
 	letter-spacing: normal;
 	text-align: center;
 	color: $white;
-	padding-bottom: 7%;
+	padding-bottom: 6%;
 }
 
 h5 {
@@ -450,8 +450,8 @@ cite {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: bottom;
-	padding-top: 9%;
-	padding-bottom: 9%;
+	padding-top: 7%;
+	padding-bottom: 10%;
 	// margin-top: -8%;
 }
 
@@ -675,5 +675,36 @@ blockquote {
 	}
 	.data-spacing {
 		margin-top: 20%;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.wrapper {
+		margin-top: 9%;
+		margin-bottom: 9%;
+	}
+	.augmented-spacing {
+		margin-top: 2%;
+	}
+	.reality-spacing {
+		margin-top: 3%;
+		margin-bottom: 0;
+	}
+	.education-spacing {
+		margin-top: 2%;
+	}
+	.research-spacing {
+		margin-top: 4%;
+		margin-bottom: 0;
+	}
+	.data-spacing {
+		margin-top: -18%;
+	}
+	.innovation-spacing {
+		margin-top: 4%;
+		margin-bottom: 0;
+	}
+	.in-app-spacing {
+		margin-top: 18%;
 	}
 }
