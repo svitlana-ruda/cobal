@@ -54,7 +54,7 @@ a[target] {
           box-shadow: 0px 20px 30px 0 rgba(0, 0, 29, 0.14);
   background-color: white;
   padding: 13px 18px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -75,7 +75,7 @@ a[target] {
           box-shadow: 0px 15px 50px 0 rgba(26, 38, 74, 0.15);
   padding: 18px 53px;
   background-color: white;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -91,7 +91,7 @@ a[target] {
 }
 
 .view-demo {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -113,7 +113,7 @@ a[target] {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#7464fd), color-stop(40%, #5851ea), to(#5851ea));
   background-image: linear-gradient(to bottom, #7464fd, #5851ea 40%, #5851ea);
   padding: 17px 51px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -136,7 +136,7 @@ a[target] {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#7464fd), color-stop(40%, #5851ea), to(#5851ea));
   background-image: linear-gradient(to bottom, #7464fd, #5851ea 40%, #5851ea);
   padding: 15px 44px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 21px;
   font-weight: normal;
   font-style: normal;
@@ -151,7 +151,7 @@ a[target] {
 }
 
 h1 {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 50px;
   font-weight: 600;
   font-style: normal;
@@ -164,7 +164,7 @@ h1 {
 }
 
 h2 {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 40px;
   font-weight: 600;
   font-style: normal;
@@ -181,7 +181,7 @@ h2 {
 }
 
 h3 {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 36px;
   font-weight: 500;
   font-style: normal;
@@ -192,7 +192,7 @@ h3 {
 }
 
 h4 {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 35px;
   font-weight: normal;
   font-style: normal;
@@ -205,7 +205,7 @@ h4 {
 }
 
 h5 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -218,7 +218,7 @@ h5 {
 }
 
 h6 {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 20px;
   font-weight: 600;
   font-style: normal;
@@ -230,7 +230,7 @@ h6 {
 }
 
 p {
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -247,7 +247,7 @@ p {
 }
 
 .par-apostrophe {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 108.5px;
   font-weight: normal;
   font-style: normal;
@@ -262,7 +262,7 @@ p {
 }
 
 .par-review {
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 18px;
   font-weight: normal;
   font-style: italic;
@@ -273,7 +273,7 @@ p {
 }
 
 .par-profession {
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -284,7 +284,7 @@ p {
 }
 
 .par-footer {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
@@ -297,7 +297,7 @@ p {
 }
 
 cite {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -310,10 +310,11 @@ cite {
 }
 
 .form-control {
+  width: 100%;
   padding: 52px;
   border-radius: 52px;
   border: solid 1px #527ee9;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 22px;
   font-weight: 500;
   font-style: normal;
@@ -355,7 +356,7 @@ cite {
 }
 
 .logo-text {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 28px;
   font-weight: bold;
   font-style: normal;
@@ -372,7 +373,7 @@ cite {
 }
 
 .menu-items {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -398,7 +399,7 @@ cite {
 }
 
 .footer-links a {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
@@ -411,7 +412,7 @@ cite {
 }
 
 .par-copyright {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 17px;
   font-weight: 300;
   font-style: normal;
@@ -643,13 +644,6 @@ blockquote {
   }
 }
 
-@media (max-width: 1399.98px) {
-  .form-control {
-    padding: 43px;
-    font-size: 16px;
-  }
-}
-
 @media (max-width: 1299.98px) {
   .reality-spacing {
     margin-top: 10%;
@@ -704,6 +698,9 @@ blockquote {
   .nav-item:last-child {
     margin-bottom: 2%;
   }
+  .btn-start {
+    margin-bottom: 2%;
+  }
   .heading-spacing {
     padding-top: 20%;
     padding-bottom: 30%;
@@ -727,7 +724,7 @@ blockquote {
     padding-bottom: 25%;
   }
   .btn-learn {
-    margin-top: 2%;
+    margin-top: 0;
   }
   .slick-dots {
     bottom: -60px;
