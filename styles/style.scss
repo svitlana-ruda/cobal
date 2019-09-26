@@ -172,6 +172,7 @@ h2 {
 	letter-spacing: -0.8px;
 	text-align: center;
 	color: $hd2-color;
+	white-space: nowrap;
 	margin-bottom: 7%;
 }
 
@@ -330,6 +331,10 @@ cite {
 	&:invalid {
         box-shadow: none;
     }
+}
+
+.best-img {
+	flex-wrap: wrap;
 }
 
 .hidden {
@@ -746,5 +751,25 @@ blockquote {
 	}
 	.btn-learn {
 		margin-top: 2%;
+	}
+	.slick-dots {
+		bottom: -60px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.heading-spacing {
+		padding-top: 30%;
+		padding-bottom: 25%;
+	}
+	h2 {
+		white-space: normal;
+	}
+	.in-app-spacing {
+		margin-top: 12%;
+	}
+	.in-app-iphone {
+		margin-top: -35%;
+		margin-bottom: -25%;
 	}
 }

@@ -4,7 +4,7 @@
   let myBreak = document.querySelector('.break');
 
     if (window.outerWidth <=767) {
-      myBreak.setAttribute('class', 'hidden')
+      myBreak.setAttribute('class', 'hidden');
   }
 
 })();

@@ -172,6 +172,7 @@ h2 {
   letter-spacing: -0.8px;
   text-align: center;
   color: #324865;
+  white-space: nowrap;
   margin-bottom: 7%;
 }
 
@@ -342,6 +343,11 @@ cite {
 .form-control:invalid {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.best-img {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .hidden {
@@ -712,6 +718,26 @@ blockquote {
   }
   .btn-learn {
     margin-top: 2%;
+  }
+  .slick-dots {
+    bottom: -60px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .heading-spacing {
+    padding-top: 30%;
+    padding-bottom: 25%;
+  }
+  h2 {
+    white-space: normal;
+  }
+  .in-app-spacing {
+    margin-top: 12%;
+  }
+  .in-app-iphone {
+    margin-top: -35%;
+    margin-bottom: -25%;
   }
 }
 /*# sourceMappingURL=style.css.map */
