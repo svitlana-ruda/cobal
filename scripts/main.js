@@ -1,3 +1,15 @@
+(function(){
+  "use strict";
+  
+  let myBreak = document.querySelector('.break');
+
+    if (window.outerWidth <=767) {
+      myBreak.setAttribute('class', 'hidden')
+  }
+
+})();
+
+
 $(document).ready(function(){
 
     $('.slider').slick({
@@ -29,7 +41,7 @@ $(document).ready(function(){
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1
             }
           },
@@ -47,6 +59,7 @@ $(document).ready(function(){
       });
 
 });
+
 
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
