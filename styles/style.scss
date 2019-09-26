@@ -332,6 +332,10 @@ cite {
     }
 }
 
+.hidden {
+	display: none;
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////
 // Header /////////////////////////////////////////////////////////////////////
@@ -468,16 +472,17 @@ cite {
 	background-color: $white;
 	margin-right: 1.5rem;
 	margin-left: 1.5rem;
-	border-radius: 83px 0 0 0;
-	&:nth-child(2n) {
-		border-radius: 0 0 83px 0;
-	}
-	&:nth-child(3n) {
-		border-radius: 0 0 0 83px;
-	}
-	&:nth-child(4n) {
-		border-radius: 0 83px 0 0;
-	}
+	border-radius: 83px;
+	// border-radius: 83px 0 0 0;
+	// &:nth-child(2n) {
+	// 	border-radius: 0 0 83px 0;
+	// }
+	// &:nth-child(3n) {
+	// 	border-radius: 0 0 0 83px;
+	// }
+	// &:nth-child(4n) {
+	// 	border-radius: 0 83px 0 0;
+	// }
 }
 
 .apostrophe-bg {
@@ -731,5 +736,15 @@ blockquote {
 	.cobal-info-spacing {
 		margin-top: 5%;
 		margin-bottom: 1%;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.heading-spacing {
+		padding-top: 25%;
+		padding-bottom: 25%;
+	}
+	.btn-learn {
+		margin-top: 2%;
 	}
 }
